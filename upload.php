@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 include 'config.php';
 
@@ -13,6 +13,7 @@ if (isset($_POST['upload'])) { // If isset upload button or not
     $file_temp = $_FILES["file"]["tmp_name"]; // Get uploaded file temp
     $file_size = $_FILES["file"]["size"]; // Get uploaded file size
 
+
     /*
     How we can get mb from bytes
     (mb*1024)*1024
@@ -20,6 +21,9 @@ if (isset($_POST['upload'])) { // If isset upload button or not
     In my case i'm 10 mb limit
     (10*1024)*1024
     */
+
+    $keySecret = $_POST['keySecret'];
+
 
     if ($file_size > 10485760) { // Check file size 10mb or not
         echo "<script>alert('Woops! File is too big. Maximum file size allowed for upload 10 MB.')</script>";
@@ -47,6 +51,7 @@ if (isset($_POST['upload'])) { // If isset upload button or not
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,10 +62,11 @@ if (isset($_POST['upload'])) { // If isset upload button or not
 
     <title>File Web Sharing</title>
 </head>
+
 <body>
     <div class="file__upload">
         <div class="header">
-            <p><i class="fa fa-cloud-upload fa-2x"></i><span><span>up</span>load</span></p>         
+            <p><i class="fa fa-cloud-upload fa-2x"></i><span><span>up</span>load</span></p>
         </div>
         <form action="" method="POST" enctype="multipart/form-data" class="body">
             <!-- Sharable Link Code -->
@@ -76,15 +82,21 @@ if (isset($_POST['upload'])) { // If isset upload button or not
                     or <span>browse</span> to begin the upload
                 </p>
             </label>
+
+            <input type="text" id="keySecret" name="keySecret" style="margin:10px;border-radius:10px; padding:10px;"
+                placeholder="your secret" require></input>
+
+
             <button name="upload" class="btn">Upload</button>
         </form>
     </div>
     <div class="container-logout">
         <form action="" method="POST" class="login-email">
-           
-             
+
+
             <div class="input-group">
-            <a href="logout.php" class="btn">Logout</a>
+                <a href="logout.php" class="btn">Logout</a>
             </div>
 </body>
+
 </html>
