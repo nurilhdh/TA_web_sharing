@@ -66,21 +66,21 @@ if (isset($_POST['upload'])) { // If isset upload button or not
 <body>
     <div class="file__upload">
         <div class="header">
-            <p><i class="fa fa-cloud-upload fa-2x"></i><span><span>up</span>load</span></p>
+            <p><i class="fa fa-cloud-upload file  fa-2x"></i><span><span>up</span>load</span></p>
         </div>
         <form action="" method="POST" enctype="multipart/form-data" class="body">
             <!-- Sharable Link Code -->
-            <input type="checkbox" id="link_checkbox">
+            <!-- <input type="checkbox" id="link_checkbox">
             <input type="text" value="<?php echo $link; ?>" id="link" readonly>
             <label for="link_checkbox" style="<?php echo $link_status; ?>">Get Sharable Link</label>
 
             <input type="file" name="file" id="upload" required>
             <label for="upload">
-                <i class="fa fa-file-text-o fa-3x"></i>
-                <p>
-                    <strong>Drag and drop</strong> files here<br>
-                    or <span>browse</span> to begin the upload
-                </p>
+                <i class="fa fa-file-text-o fa-3x"></i> -->
+            <p>
+                <strong>Drag and drop</strong> files here<br>
+                or <span>browse</span> to begin the upload
+            </p>
             </label>
 
             <input type="text" id="keySecret" name="keySecret" style="margin:10px;border-radius:10px; padding:10px;"
@@ -88,6 +88,13 @@ if (isset($_POST['upload'])) { // If isset upload button or not
 
 
             <button name="upload" class="btn">Upload</button>
+            <input type="checkbox" id="link_checkbox">
+            <input type="text" value="<?php echo $link; ?>" id="link" readonly>
+            <label for="link_checkbox" style="<?php echo $link_status; ?>">Get Sharable Link</label>
+
+            <input type="file" name="file" id="upload" required>
+            <label for="upload">
+                <i class="fa fa-file-text-o fa-3x"></i>
         </form>
     </div>
     <div class="container-logout">
