@@ -64,7 +64,7 @@ if (isset($_POST['upload'])) { // If isset upload button or not
 </head>
 
 <body>
-    <div class="file__upload">
+    <div class="file__upload" style="">
         <div class="header">
             <p><i class="fa fa-cloud-upload file  fa-2x"></i><span><span>up</span>load</span></p>
         </div>
@@ -97,13 +97,12 @@ if (isset($_POST['upload'])) { // If isset upload button or not
                 <i class="fa fa-file-text-o fa-3x"></i>
         </form>
     </div>
+    <br>
+    <br>
+    <br>
     <div class="container-logout">
-        <form action="" method="POST" class="login-email">
+        <a href="logout.php" class="">Logout</a>
 
-
-            <div class="input-group">
-                <a href="logout.php" class="btn">Logout</a>
-            </div>
 </body>
 
 </html>
