@@ -2,7 +2,7 @@
  
  $server = "localhost";
  $user = "root";
- $pass = "projek20";
+ $pass = "";
  $database = "db_filesharing";
  
 $conn = mysqli_connect($server, $user, $pass, $database);
@@ -10,3 +10,4 @@ $conn = mysqli_connect($server, $user, $pass, $database);
 if (!$conn) {
     die("<script>alert('Gagal tersambung dengan database.')</script>");
 }
+?>
