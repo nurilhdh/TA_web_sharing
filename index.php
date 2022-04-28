@@ -30,13 +30,13 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="login.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="faq.php">FAQ</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#">Info</a>
