@@ -11,7 +11,7 @@
     
 </head>
 <body>
-    <h1>FAQ</h1>
+    <h1>Frequently Asked Questions (FAQ)</h1>
    
 <div class="accordion">
   <div class="accordion-item">
