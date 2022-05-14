@@ -42,7 +42,7 @@
                             <a class="nav-link" href="#">Info</a>
                         </li> -->
                         <li class="nav-item">
-                            <a class="nav-link text-primary" href="#">Contact us</a>
+                            <a class="nav-link text-primary" href="contact.html">Contact us</a>
                         </li>
                     </ul>
                 </div>
