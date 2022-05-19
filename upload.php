@@ -82,9 +82,9 @@ if (isset($_POST['upload'])) { // If isset upload button or not
                         <li class="nav-item">
                             <a class="nav-link" href="index.php">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="about.html">About us</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="faq.php">FAQ</a>
                         </li>
@@ -94,6 +94,10 @@ if (isset($_POST['upload'])) { // If isset upload button or not
                         <li class="nav-item">
                             <a class="nav-link text-primary" href="contact.html">Contact us</a>
                         </li>
+                        </li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="logout.php">Logout</a>
+                            </li> 
                     </ul>
                 </div>
             </nav>
@@ -127,8 +131,7 @@ if (isset($_POST['upload'])) { // If isset upload button or not
     <br>
     <br>
     <br>
-    <div class="container-logout">
-        <a href="logout.php" class="">Logout</a>
+  
 
 </body>
 

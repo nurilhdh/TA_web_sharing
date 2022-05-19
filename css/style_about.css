@@ -30,11 +30,14 @@
 }
 .content-section .title{
 	text-transform: uppercase;
-	font-size: 28px;
+	font-size: 18px;
+    color: #1EA5F7;
+    background-color: #fff;
 }
 .content-section .content h3{
 	margin-top: 20px;
-	color:#fff;
+    color: #000;
+    background-color: #fff;
 	font-size: 21px;
 }
 .content-section .content p{
@@ -42,6 +45,9 @@
 	font-family: sans-serif;
 	font-size: 18px;
 	line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+
 }
 .content-section .content .button{
 	margin-top: 30px;
@@ -56,7 +62,7 @@
 }
 .content-section .content .button a:hover{
 	background-color: #a52a2a;
-	color:rgb(22, 18, 18);
+	color:#fff;
 }
 .content-section .social{
 	margin: 40px 40px;

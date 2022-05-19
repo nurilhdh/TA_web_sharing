@@ -39,13 +39,51 @@ if (isset($_GET['keySecret'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style_upload_download.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>File Web Sharing</title>
 </head>
 
 <body>
+<div class="container">
+        <header class="head my-3">
+            <nav class="navbar navbar-expand-lg navbar-light head__custom-nav">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="assets/images/logo.png" alt="website logo">
+                    <span>Secure File Sharing</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span><img src="assets/images/menu.png" alt=""></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php">Home</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.php">FAQ</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Info</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="contact.html">Contact us</a>
+                        </li>
+                        </li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="logout.php">Logout</a>
+                            </li> 
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
     <div class="file__upload">
         <div class="header">
             <p><i class="fa fa-download fa-2x"></i><span><span>down</span>load</span></p>
