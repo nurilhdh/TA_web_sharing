@@ -20,6 +20,7 @@ body {
 }
 
 .file__upload {
+ 
   width: 400px;
   height: 445px;
   margin: 20px;
@@ -38,7 +39,7 @@ body {
 }
 
 .file__upload .header p {
-  color: #fff;
+  color: #3270ce;
 }
 
 .file__upload .header p i.fa {
@@ -55,7 +56,7 @@ body {
 }
 
 .file__upload .body {
-  background: #fff;
+  background: #3270ce;
   width: 100%;
   height: calc(100% - 30px);
   border-radius: 0 0 5px 5px;
@@ -71,7 +72,7 @@ body {
 }
 
 .file__upload .body i.fa {
-  color: #d3d3d3;
+  color: #3270ce;
   margin-bottom: 20px;
 }
 
@@ -91,7 +92,7 @@ body {
   margin: 20px 0;
   padding: 0.7rem 2rem;
   font-size: 1.3rem;
-  color: #fff;
+  color: #3270ce;
   border-radius: 3px;
   opacity: 0.8;
   cursor: pointer;
@@ -126,14 +127,14 @@ body {
 label[for="link_checkbox"] {
   padding: 0.5rem 2rem;
   background: #3270ce;
-  color: #fff;
+  color: #3270ce;
   outline: none;
   cursor: pointer;
 }
 
 .download .download_link {
   text-decoration: none;
-  color: #fff;
+  color: #3270ce;
   background: #3270ce;
   padding: 0.5rem 2rem;
   border-radius: 3px;

@@ -16,27 +16,29 @@
 <div class="accordion">
   <div class="accordion-item">
     <div class="accordion-item-header">
-      What is Web Development?
+      Apa yang dimaksud Secure File Sharing?
     </div>
     <div class="accordion-item-body">
       <div class="accordion-item-body-content">
-        Web Development broadly refers to the tasks associated with developing functional websites and applications for the Internet. The web development process includes web design, web content development, client-side/server-side scripting and network security configuration, among other tasks.
+      File Sharing atau berbagi file adalah kegiatan berbagi atau menawarkan akses ke informasi atau sumber daya digital 
+      dengan menerapkan sistem keamanan agar pengguna lebih nyaman. Website ini dapat digunakan untuk file dengan maksimal ukuran 10 mb dan hanya dari format .pdf dan .doc
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <div class="accordion-item-header">
-      What is HTML?
+      Bagaimana penerapan sistem keamanan pada dokumen?
     </div>
     <div class="accordion-item-body">
       <div class="accordion-item-body-content">
-        HTML, aka HyperText Markup Language, is the dominant markup language for creating websites and anything that can be viewed in a web browser.
+       Sistem keamanan menggunakan metode algoritma kriptografi Advanced Encryption Standard (AES). Algoritma AES ini untuk melakukan 
+enkripsi dan dekripsi file, sehingga file asli hanya dapat dibaca oleh penerima jika menerima kunci dari pengirim. 
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <div class="accordion-item-header">
-      What are some basic technical skills of a Front-End developer?
+      Bagaimana cara menerapkan enkripsi file dari pengirim?
     </div>
     <div class="accordion-item-body">
       <div class="accordion-item-body-content">
@@ -58,7 +60,7 @@
   </div>
   <div class="accordion-item">
     <div class="accordion-item-header">
-      What is HTTP?
+    Bagaimana cara menerapkan dekripsi file untuk penerima?
     </div>
     <div class="accordion-item-body">
       <div class="accordion-item-body-content">

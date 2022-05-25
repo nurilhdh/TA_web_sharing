@@ -37,6 +37,8 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
     <link rel="stylesheet" type="text/css" href="css/style_login.css">
+   
+  
  
     <title>File Web Sharing</title>
 </head>
