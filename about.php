@@ -7,7 +7,6 @@
 </head>
 <body>
     <div class="about-section">
-            <img src="assets/images/pic.jpg" alt="pic kunci">
         <div class="inner-container">
             <h1>About Us</h1>
             <p class="text">
@@ -21,3 +20,4 @@
         </div>
     </div>
 </body>
+</html>

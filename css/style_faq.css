@@ -7,8 +7,9 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #fff;
-  color: #fff;
+  background-color: #3270ce;
+  color: #3270ce;
+  
 }
 h1 {
   text-align: center;
@@ -22,7 +23,7 @@ h1 {
   margin: 2rem auto;
 }
 .accordion-item {
-  background-color: #fff;
+  background-color: #3270ce;
   color: #111;
   margin: 1rem 0;
   border-radius: 0.5rem;
