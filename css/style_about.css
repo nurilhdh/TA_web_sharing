@@ -21,6 +21,20 @@ body{
     padding: 100px 0;
 }
 
+.inner-container .skills .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #3270ce;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
 .inner-container{
     width: 55%;
     float: right;

@@ -92,7 +92,7 @@ if (isset($_GET['keySecret'])) {
             <div class="download">
                 <form action="" method="GET">
                     <input type="text" id="keySecret" name="keySecret"
-                        style="margin:10px;border-radius:10px; padding:10px;" placeholder="the secret" require></input>
+                        style="margin:10px;border-radius:10px; padding:10px;" placeholder="Key File" require></input>
                     <input type="text" name='id' value=<?php echo $id ?> hidden>
                     <button type="submit" class="btn">GET FILE</button>
                 </form>
