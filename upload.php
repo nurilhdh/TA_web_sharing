@@ -3,7 +3,8 @@
 include 'config.php';
 require_once 'tools.php';
 
-session_start();
+// Starting clock time in seconds
+$start_time = microtime(true);
 
 $user = $_SESSION['username'];
 if (!$user) {
@@ -39,7 +40,8 @@ if (isset($_POST['upload'])) { // If isset upload button or not
             $result = mysqli_query($conn, $sql);
 
             if ($row = mysqli_fetch_assoc($result)) {
-                $link = $base_url . "download.php?id=" . $row['id'];
+                $link = $base_url . "https://berbagifile.online/download.php?id=" . $row['id'];
+                // $link = $base_url . "download.php?id=" . $row['id'];
                 $link_status = "display: block;";
             }
         } else {
@@ -47,6 +49,14 @@ if (isset($_POST['upload'])) { // If isset upload button or not
         }
     }
 }
+// End clock time in seconds
+$end_time = microtime(true);
+  
+// Calculate script execution time
+$execution_time = ($end_time - $start_time);
+  
+echo " Execution time of script = ".$execution_time." sec";
+session_start();
 
 ?>
 
