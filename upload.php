@@ -25,7 +25,7 @@ if (isset($_POST['upload'])) { // If isset upload button or not
     if ($file_size > 10485760) { // Check file size 10mb or not
         echo "<script>alert('Woops! File is too big. Maximum file size allowed for upload 10 MB.')</script>";
     } else {
-        $sql = "INSERT INTO uploaded_files (name,file,keyword) VALUES ('$username', '$file_new_name', '$keySecret')";
+        $sql = "INSERT INTO uploaded_files (name,file,keyword) VALUES ('$user', '$file_new_name', '$keySecret')";
         $result = mysqli_query($conn, $sql);
         $newPath = $location . $file_new_name;
         if ($result) {
