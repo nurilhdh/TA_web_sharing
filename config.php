@@ -1,12 +1,20 @@
 <?php
+// Informasi koneksi database
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "db_berbagifile";
 
-$server = "localhost";
-$user = "root";
-$pass = "";
-$database = "db_filesharing";
+// Membuat koneksi
+$conn = new mysqli($servername, $username, $password, $database);
 
-$conn = mysqli_connect($server, $user, $pass, $database);
-
-if (!$conn) {
-    die("<script>alert('Gagal tersambung dengan database.')</script>");
+// Memeriksa koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
 }
+
+// echo "Koneksi berhasil!";
+
+// Menutup koneksi
+// $conn->close();
+?>

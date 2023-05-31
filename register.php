@@ -1,25 +1,28 @@
-<?php 
- 
+
+<?php
+
 include 'config.php';
- 
-error_reporting(0);
- 
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 session_start();
- 
+
 if (isset($_SESSION['username'])) {
     header("Location: index.php");
 }
- 
+
 if (isset($_POST['submit'])) {
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $password = md5($_POST['password']);
-    $cpassword = md5($_POST['cpassword']);
- 
-    if ($password == $cpassword) {
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $cpassword = password_hash($_POST['cpassword'], PASSWORD_DEFAULT);
+		
+    if (password_verify($_POST['password'], $cpassword)) {
         $sql = "SELECT * FROM user WHERE email='$email'";
         $result = mysqli_query($conn, $sql);
-        if (!$result->num_rows > 0) {
+
+ if (!$result->num_rows > 0) {
             $sql = "INSERT INTO user (username, email, password)
                     VALUES ('$username', '$email', '$password')";
             $result = mysqli_query($conn, $sql);
@@ -35,12 +38,12 @@ if (isset($_POST['submit'])) {
         } else {
             echo "<script>alert('Woops! Email Sudah Terdaftar.')</script>";
         }
-         
     } else {
         echo "<script>alert('Password Tidak Sesuai')</script>";
+	 
     }
 }
- 
+
 ?>
  
 <!DOCTYPE html>
@@ -60,16 +63,16 @@ if (isset($_POST['submit'])) {
         <form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
             <div class="input-group">
-                <input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
+                <input type="text" placeholder="Username" name="username">
             </div>
             <div class="input-group">
-                <input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+                <input type="email" placeholder="Email" name="email" >
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
+                <input type="password" placeholder="Password" name="password"  >
             </div>
             <div class="input-group">
-                <input type="password" placeholder="Confirm Password" name="cpassword" value="<?php echo $_POST['cpassword']; ?>" required>
+                <input type="password" placeholder="Confirm Password" name="cpassword" >
             </div>
             <div class="input-group">
                 <button name="submit" class="btn">Register</button>

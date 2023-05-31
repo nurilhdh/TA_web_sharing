@@ -16,7 +16,7 @@ body{
 .about-section{
     background: url(../assets/images/pic.jpg) no-repeat left;
     background-size: 55%;
-    background-color: #fdfdfd;
+    background-color: white;
     overflow: hidden;
     padding: 100px 0;
 }

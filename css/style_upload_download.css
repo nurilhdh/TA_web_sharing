@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -13,7 +12,6 @@ body {
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(images/bg.jpg);
     background: #4F6072;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -65,9 +63,7 @@ body {
     text-align: center;
 }
 
-.file__upload .body input[type="file"] {
-    opacity: 0;
-}
+
 
 .file__upload .body i.fa {
     color: #d3d3d3;
