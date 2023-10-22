@@ -3,7 +3,7 @@
 $server = "localhost";
 $user = "root";
 $pass = "";
-$database = "db_filesharing";
+$database = "db_berbagifile";
 
 $conn = mysqli_connect($server, $user, $pass, $database);
 

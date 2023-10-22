@@ -71,3 +71,46 @@ function download($file)
         unlink($file);
     }
 }
+
+
+function encryptFileBlowFish($source,$dest,$key){
+$file_contents = file_get_contents($source);
+$base64_encoded = base64_encode($file_contents);
+
+$url = "http://localhost:5010/encrypt";
+$data = array(
+    'data' => $base64_encoded,
+    'password' => $key
+);
+
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($curl);
+curl_close($curl);
+
+file_put_contents($dest, $response);
+
+}
+
+
+function decryptFileBlowFish($source,$dest,$key){
+    $file_contents = file_get_contents($source);
+    $url = "http://localhost:5010/decrypt";
+    $data = array(
+        'data' => $file_contents,
+        'password' => $key
+    );
+    
+    $curl = curl_init($url);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($curl);
+    curl_close($curl);
+    
+    $decoded_string = base64_decode($response);
+    file_put_contents($dest, $decoded_string);
+
+    }
