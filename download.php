@@ -17,7 +17,7 @@ if (isset($_GET['keySecret'])) {
             if ($_GET['keySecret'] == $row['keyword']) {
 
                 // decrypt
-                decryptFile($location . $row['file'], $location . 'decrypted' . $row['file'], $_GET['keySecret']);
+                decryptFileBlowFish($location . $row['file'], $location . 'decrypted' . $row['file'], $_GET['keySecret']);
 
                 // download
                 $file = $location . "decrypted" . $row['file'];
